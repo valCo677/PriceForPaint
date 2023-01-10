@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class repainting {
+    public static void main( String[] args ) {
+        Scanner scanner = new Scanner(System.in);
+        int packajes = Integer.parseInt ( scanner.nextLine () );
+        int paint = Integer.parseInt ( scanner.nextLine () );
+        int corceline = Integer.parseInt ( scanner.nextLine () );
+        int nylon = Integer.parseInt ( scanner.nextLine () );
+        double priceForPackages = (packajes +2)*1.50;
+        double priceForPaint = (paint  + (paint*0.10))*14.50;
+        double priceForCorseline = corceline*5.00;
+        double priceForNylon = 0.40;
+        double priceForMaterials =(priceForPackages+priceForNylon+priceForCorseline+priceForPaint);
+        double priceForWork  = (priceForMaterials*0.30)*8;
+        double FinalSum = ( priceForMaterials + priceForWork);
+
+        System.out.println (FinalSum);
+
+
+
+    }
+}
